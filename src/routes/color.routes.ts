@@ -19,12 +19,12 @@ const colorRoutes = Router();
 /**
  * Rota para obter todos os colors de um apoiador pelo seu ID.
  *
- * @name GET /color/all/:id
+ * @name GET /color
  * @middleware ensureTokenIsValidMiddleware - Valida o token de autenticação.
  * @controller getAllcolorIdController - Retorna os colors do apoiador.
  */
 colorRoutes.get(
-  "/all/:id",
+  "/",
   ensureTokenIsValidMiddleware,
   getAllColorController
 );
