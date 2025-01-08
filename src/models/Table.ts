@@ -37,7 +37,7 @@ Table.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: "colors",
+        model: Color,
         key: "id",
       },
     },
