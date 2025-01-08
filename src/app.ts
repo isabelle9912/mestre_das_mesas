@@ -9,8 +9,8 @@ import { handleError } from "./errors";
 
 import userRoutes from "./routes/user.routes";
 import loginRoutes from "./routes/login.routes";
-import extratoRoutes from "./routes/color.routes";
-
+import colorRoutes from "./routes/color.routes";
+import TableRoutes from "./routes/table.routes";
 
 const app: Application = express();
 app.use(json());
@@ -24,7 +24,8 @@ app.get("/", (req, res) => {
 
 app.use("/login", loginRoutes);
 app.use("/users", userRoutes);
-app.use("/extrato", extratoRoutes);
+app.use("/color", colorRoutes);
+app.use("/table", TableRoutes);
 
 // não colocar coisas a baixo desse "use"
 app.use(handleError);
