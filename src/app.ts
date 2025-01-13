@@ -11,6 +11,7 @@ import userRoutes from "./routes/user.routes";
 import loginRoutes from "./routes/login.routes";
 import colorRoutes from "./routes/color.routes";
 import TableRoutes from "./routes/table.routes";
+import orderRoutes from "./routes/order.routes";
 
 const app: Application = express();
 app.use(json());
@@ -26,6 +27,7 @@ app.use("/login", loginRoutes);
 app.use("/users", userRoutes);
 app.use("/color", colorRoutes);
 app.use("/table", TableRoutes);
+app.use("/order", orderRoutes);
 
 // não colocar coisas a baixo desse "use"
 app.use(handleError);

@@ -53,7 +53,7 @@ const getOrderIdController = async (
  * @throws {404} - Caso os Orders não sejam encontrados.
  * 
  * @example
- * // GET /Order
+ * // GET /order
  * // Response:
  * {
     id: number;
