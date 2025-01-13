@@ -43,3 +43,5 @@ const createOrderService = async (payload: iOrderCreate): Promise<iOrder> => {
   // Retornar o Order validado com o schema
   return orderSchema.parse(createdOrder);
 };
+
+export default createOrderService;
